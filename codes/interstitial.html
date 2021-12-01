@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>Interstital DFP AD Code</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -20,13 +20,32 @@
   <link rel="stylesheet" href="css/main.css">
 
   <meta name="theme-color" content="#fafafa">
+
+   <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+  <script>
+    window.googletag = window.googletag || { cmd: [] };
+    var interstitialSlot;
+    googletag.cmd.push(function () {
+      interstitialSlot = googletag.defineOutOfPageSlot("/6355419/Travel/Europe/France/Paris",googletag.enums.OutOfPageFormat.INTERSTITIAL).addService(googletag.pubads());
+      googletag.enableServices();});
+      googletag.cmd.push(function () {googletag.display(interstitialSlot);});
+  </script>
+
 </head>
 
 <body>
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
+<p>The link will trigger the Interstital ad. For direct ad only use 320x480 , 300x250 & 336x280 ad sizes. </p>
+ <a href="https://www.example.com/">
+           interstitial
+        </a><div>sdfsdfsd</div>
 
+<p>This link will not trigger any Interstitial</p>
+        <a data-google-interstitial="false" href="https://www.example.com/">
+          This link will never trigger an interstitial
+        </a>
+      </p>
+    </div>
 
 
 
