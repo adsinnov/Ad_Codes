@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Ad Code Creator</title>
+  <style>
+  </style>
+</head>
+<body>
+
+<form id = "form1" method="post">
+    <table class = "tbl">
+    <tr>
+    <td> Number Of Define Slot ? * </td></tr>
+    <tr><td> <input type = "text" name = "title" class = "title" required> </td></tr>
+    <tr>
+    <tr><td>
+    <button id = "btn" onClick="return validate();">Next Step</button></td></tr>
+    </table>
+</form>
+
+<div id="secondstep"></div>
+
+<script>
+
+  function validate() {
+    var isValid = true;
+    var form1 = document.getElementById('form1');
+
+    if (form1.title.value == '') {
+        isValid = false;
+    }
+
+    if (isValid) {
+        // document.getElementById('form2').style.display='block';
+        document.getElementById('form1').style.display='none';
+
+        document.getElementById('secondstep').innerHTML= "<form id = \"form2\" method = \"post\" action = \"thankyou_page.php\">\n" +
+          "    <table class = \"tbl2\">\n" +
+          "    <tr>\n" +
+          "    <td> Email * </td></tr>\n" +
+          "    <tr><td> <input type = \"text\" name = \"email\" class = \"email\" required> </td></tr>\n" +
+          "    <tr>\n" +
+          "    <td> Telephone * </td></tr>\n" +
+          "    <tr><td> <input type = \"text\" name = \"phone\" class = \"phone\" required> </td></tr>\n" +
+          "    <tr><td>   <button id = \"btn1\">Next Step</button></td></tr>\n" +
+          "    </table>\n" +
+          "</form>"
+
+        return false;
+    }
+}
+
+function thirdstep() {
+    var isValid = true;
+    var form1 = document.getElementById('form1');
+
+    if (form1.title.value == '') {
+        isValid = false;
+    }
+
+    if (isValid) {
+        // document.getElementById('form2').style.display='block';
+        document.getElementById('form1').style.display='none';
+
+        document.getElementById('secondstep').innerHTML= "<form id = \"form2\" method = \"post\" action = \"thankyou_page.php\">\n" +
+          "    <table class = \"tbl2\">\n" +
+          "    <tr>\n" +
+          "    <td> Email * </td></tr>\n" +
+          "    <tr><td> <input type = \"text\" name = \"email\" class = \"email\" required> </td></tr>\n" +
+          "    <tr>\n" +
+          "    <td> Telephone * </td></tr>\n" +
+          "    <tr><td> <input type = \"text\" name = \"phone\" class = \"phone\" required> </td></tr>\n" +
+          "    <tr><td>   <button id = \"btn1\">Next Step</button></td></tr>\n" +
+          "    </table>\n" +
+          "</form>"
+
+        return false;
+    }
+}
+
+</script>
+
+</body>
+
+</html>

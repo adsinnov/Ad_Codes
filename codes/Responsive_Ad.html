@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Responsive</title>
+
+  <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+  <script>
+    window.googletag = window.googletag || {cmd: []};
+    googletag.cmd.push(function () {
+      var REFRESH_KEY = 'refresh';
+      var REFRESH_VALUE = 'true';
+
+      var mappingalladunits2 = googletag.sizeMapping().addSize([992, 0], [
+        [728, 90]
+      ]). //desktop
+        addSize([768, 0], [
+          [300, 250]
+        ]). //tablet
+        addSize([320, 0], [
+          [300, 250]
+        ]). //mobile
+        addSize([0, 0], [
+          [320, 50],
+          [1, 1]
+        ]). //other
+        build();
+
+
+      googletag.defineSlot('/1019715/Sunsings.org/Birthday_ATF', [300, 250], 'div-gpt-ad-ATF').defineSizeMapping(mappingalladunits2).setTargeting(REFRESH_KEY, REFRESH_VALUE).addService(googletag.pubads());
+
+
+      var SECONDS_TO_WAIT_AFTER_VIEWABILITY = 30;
+      googletag.pubads().addEventListener('impressionViewable', function (event) {
+        var slot = event.slot;
+        if (slot.getTargeting(REFRESH_KEY).indexOf(REFRESH_VALUE) > -1) {
+          setTimeout(function () {
+            googletag.pubads().refresh([slot]);
+          }, SECONDS_TO_WAIT_AFTER_VIEWABILITY * 1000);
+        }
+      });
+      googletag.pubads().enableSingleRequest();
+      googletag.pubads().collapseEmptyDivs(true);
+      googletag.enableServices();
+    });
+  </script>
+
+</head>
+<body>
+
+<div id="div-gpt-ad-ATF">
+  <script>
+    googletag.cmd.push(function () {
+      googletag.display("div-gpt-ad-ATF");
+    });
+  </script>
+</div>
+
+</body>
+</html>
